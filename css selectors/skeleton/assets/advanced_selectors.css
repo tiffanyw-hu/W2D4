@@ -50,12 +50,16 @@ ol li:nth-of-type(2n) {
 .user_review #_review {
   font-size: 1px;
   font-weight: solid;
-  color: black 
+  color: black
 }
 
 input[type="radio"] {
   cursor: pointer;
   outline: none;
+  -webkit-appearance: none;
+  background-image: url(./stars.png);
+  width: 27px;
+  height: 27px;
 }
 
 input[type="submit"] {
