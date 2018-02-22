@@ -30,12 +30,14 @@ end
 
 def sub_sum2(arr)
   largest_sum = 0
+  current_sum = 0
   arr.each do |el|
+    current_sum += el
     if largest_sum + el < 0
-      largest_sum = 0
+      current_sum = 0
       next
     end
-      largest_sum += el
+    largest_sum = current_sum if current_sum > largest_sum
   end
   largest_sum
 
